@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link   rel ="stylesheet" type="text/css"  href = "style.css" > 
+  <title>Document</title>
+  
+</head>
+<body>
+  <header>
+    <img src="/Imagenes/logo a.png" class="img-logo" alt="logo">
+  </header>
+  <h1 class="titulo">Encriptador de textos</h1>
+  <main class="main">
+    <section class="mesgbox-left">
+      <h2 id = "">Ingrese Mensaje a encriptar:</h2>
+      <form action="">
+        
+        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aquí...">
+        <br>
+        <br>
+        <input class="btn" type="submit" value="Encriptar" id="btn-encriptar">
+                
+        <input class="btn" type="submit" value="Desencriptar" id="btn-desencriptar">
+        <span id = "error-texto" class = "invisible">Error de caracter</span>
+      </form>
+    </section>
+  
+    <section class="mesgbox-right">
+      <h2 id="">Mensaje encriptado:</h2>
+      <form action = "">
+     
+        
+        <input class="text-input" type="text" id="msg" readonly> </input>
+        <br>
+        <br>
+        <input class="btn" type="submit" value="Copiar" id="btn-copy">
+        
+        
+        <button onclick="limpiar()" class="btnlimpiar">Limpiar</button>
+       
+
+      </form>
+      
+    </section>
+  </main>
+  <footer class="reservado">
+    <p>© Matías Fuente 2022</p>
+</footer>
+
+  <script src="script.js"></script>
+  <script src = "validar_caracteres.js"></script>
+  <script src= "https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
